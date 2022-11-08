@@ -1,0 +1,95 @@
+Estilizando tabelas  ===>
+_________________________________
+
+<!DOCTYPE html>
+
+<html lang="pt-br"> 														
+
+<heady>
+
+        <title> Estilizando tabelas </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+</heady>
+
+<body>
+        <h2> Estilizando tabelas </h2>
+
+        <table>
+
+                <tr class="alternado">
+                        <th> Código </th>
+                        <th> Produto </th>
+                        <th> Preço </th>
+                </tr>
+
+                <tr>
+                        <td> 001 </td>
+                        <td> Notebook </td>
+                        <td class="preco"> R$ 2.500 </td>
+                </tr>
+
+                <tr class="alternado">
+                        <td> 002 </td>
+                        <td> Celular </td>
+                        <td class="preco"> R$ 1.500 </td>
+                </tr>
+
+                <tr>
+                        <td> 003 </td>
+                        <td> Tablet </td>
+                        <td class="preco"> R$ 3.500 </td>
+                </tr>
+
+                <tr class="alternado">
+                        <td> 004 </td>
+                        <td> Iphone </td>
+                        <td class="preco"> R$ 3.500 </td>
+                </tr>
+
+        </table>
+
+</body>
+
+</html>
+______________________________________________-
+
+CSS ===>
+
+/**** Estilizando Tabelas ***/
+
+/***********************************/
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table {
+    width: 600px;
+}
+
+th, td {
+    padding: 7px;
+}
+
+th {
+    text-transform: uppercase;
+    border-top: 1px solid #999;
+    border-bottom: 2px solid #999;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.1em ;
+}
+
+tr.alternado {
+    background-color: #efefef ;
+}
+
+tr:hover {
+    background-color: #999;
+}
+
+.preco {
+    text-align: right;
+}

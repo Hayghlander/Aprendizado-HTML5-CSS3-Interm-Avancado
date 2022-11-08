@@ -1,0 +1,119 @@
+ESTILIZANDO FORMULÁRIOS  ===>
+______________________________________________________________________
+
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<heady>
+
+        <title> Estilizando formulários </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+</heady>
+
+<body>
+        <h2> Estilizando tabelas </h2>
+
+        <form>
+
+                <fieldset>
+
+                        <legend> Detalhes do contato </legend>
+                        <div>
+                                <label for="nome"> Nome: </label>
+                                <input type="text" name="nome" id="nome">
+                        </div>
+
+                        <div>
+                                <label for="nome"> email: </label>
+                                <input type="text" name="nome" id="nome">
+                        </div>
+
+                        <div>
+                                <label for="nome"> URL: </label>
+                                <input type="text" name="nome" id="nome">
+                        </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                        <legend> Comentários </legend>
+
+                        <div>
+                                <label for="mensagem"> Mensagem: </label>
+                                <textarea name="mensagem" id="mensagem">
+                                </textarea>
+                        </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                        <legend> Lembrar de mim </legend>
+                        <div>
+                                <label>
+                                        <input class="radio" name="lembrar" id="sim"> Sim
+                                </label>
+                        </div>
+
+                        <div>
+                                <label>
+                                        <input class="radio" type="radio" name="lembrar" id="não"> Não
+                                </label>
+                        </div>
+
+                </fieldset>
+
+
+        </form>
+
+</body>
+
+</html>
+
+______________________________________________________________________
+
+CSS==>
+
+/**** Estilizando formulários ***/
+
+/***********************************/
+
+body {
+    font-family: 'Trebuchet MS', Arial, Helvetica, Arial, sans-serif;
+}
+
+fieldset {
+    padding: 2em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend {
+    font-weight: bold ;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {     /* [type="text"] */  
+    width: 20em;
+}
+
+textarea {
+    width: 20em;
+    height: 10em;
+}
+
+input.radio, input.checkbox, input.submit {
+    width: auto;
+}
+.radio {
+    margin-right: 1em;
+}

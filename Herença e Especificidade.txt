@@ -1,0 +1,24 @@
+/**** HERANÇA E ESPECIFICIDADE ****/
+
+/* SE UM SELETOR FOR MAIS ESPECÍFICO QUE O OUTRO A REGRA MAIS ESPECÍFICA SERÁ APLICADA 
+( TERÁ PROCEDÊNCIA SOBRE REGRAS MAIS GERAIS */
+/***********************************/
+
+* {
+    color: red;
+}
+
+/* 3 */
+h2 {
+    color: blue;
+}
+
+/* 2 */
+h2.verde {
+    color: green;
+}
+
+/* 1 */
+h2#amarelo {
+    color: yellow;
+}	

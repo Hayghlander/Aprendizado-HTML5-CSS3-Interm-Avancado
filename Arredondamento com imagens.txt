@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<heady>
+
+        <title> arredondamento com imagens </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+</heady>
+
+<body>
+        <div class="caixa">
+                <h2>cabecalho</h2>
+                <p>Lorem ipsum dolor sit amet. Eos alias sequi et alias repellendus et aliquid quidem. Ut rerum dolor ea
+                perspiciatis ipsum sit omnis dolorum id modi magnam. Sit quos voluptatem ut accusamus
+                consequatur et quisquam rerum quo earum totam.</p>
+        </div>
+
+
+</body>
+
+</html>
+
+___________________________________________________
+
+CSS==>
+
+/**** Arredondamento com imagens ***/
+
+/***********************************/
+
+.caixa {
+    width: 400px;
+    background: #dedede url(imagens/topo2.png) no-repeat left top;
+}
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+}
+.caixa p {
+    background: url(imagens/baixo.png) no-repeat left bottom;
+}

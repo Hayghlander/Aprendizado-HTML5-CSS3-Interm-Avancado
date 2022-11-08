@@ -1,0 +1,89 @@
+NAVEGAÇÃO COM ABAS ==>
+
+____________________________
+
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<heady>
+
+        <title> navegação com abas </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+</heady>
+
+<body id="home">
+
+        <h2> Home </h2>
+        <ul>
+                <li id="atual">
+
+                        <a href="index.html"> Home </a></li>
+
+                <li>
+                        <a href="sobre.html"> Sobre </a></li>
+
+                <li>
+                        <a href="servicos.html"> Servicos </a></li>
+
+                <li>
+                        <a href="noticias.html"> Notícias </a></li>
+
+                <li>
+                        <a href="contato.html"> contato </a></li>
+
+        </ul>
+
+</body>
+
+</html>
+
+________________________________________________________________
+
+CSS  ==>
+
+/**** BARRA DE NAVEGAÇÃO COM ABAS ****/
+/***********************************/
+
+body{
+    
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+}
+
+ul li {
+    float: left;
+    background: url(imagens/aba-direita.png) no-repeat top right;
+}
+
+li a {
+
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url(imagens/aba-esquerda.png) no-repeat;
+    color: white;
+}
+
+ul a:hover {
+    color: #81441b;
+}
+
+ul #atual {
+    background: url(imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a {
+    background: url(imagens/aba-direita-atual.png) no-repeat top right;
+
+}

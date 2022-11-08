@@ -1,0 +1,77 @@
+TIPOS de SELETORES
+
+_______________________________________________________
+
+/* SELETOR UNIVERSAL ==> APlicasse em todos os elementos do documento, ==>
+seleciona todos os elementos da página */
+* {
+    border: 1px solid red
+}
+*****************************************************
+
+/* SELETOR DE TEXTO ==> Seleciona elementos pelo tipo ==> */
+h1, h2, h3 etc.... {
+    color: green;
+}
+*****************************************************
+/* SELETOR DE CLASSE ==> 
+Seleciona um elementos cujo atributo CLASS
+tem o valor especificado depois do ponto ==>
+
+ex: verde {} seleciona qualqer elemento cujo atributo class 
+tem o valor "verde"
+ */
+
+.verde {
+    color:green;
+}
+p.verde {
+    color:green;
+}
+******************************************************
+
+/* SELETOR ID ==> seleciona um elemento 
+cujo atributo id tem o valor especificado após o símbolo de cerquilha.
+ex: #cabecalho {}  ===> Seleciona elemento cujo atributo id tem o valor "cabecalho" */
+
+#cabecalho {
+    border: 1px solid blue;
+}
+*******************************************************
+/* SELETOR DE FILHO  
+**SELECIONA UM ELEMENTO QUE É FILHO DIRETO DE OUTRO ==>
+Seleciona quaisquer elementos <a> que residem dentro de um elemento <p>, 
+mesmo se houver outros elementos alinhados entre eles */
+
+    li>a {
+        color: red;
+        text-decoration: none;
+}
+********************************************************
+/* SELETOR DECENDENTE 
+** SELECIONA UM ELEMENTO QUE É DECENDENTE DE OUTRO ELEENTO ESPECIFICADO( E NÃO APENAS O FILHO)
+seleciona quaisquer elementos <a> que residem dentro d eum elemento<p>,
+ mesmo se houver outros elementos alinhados entre eles*/
+
+div a {
+color: red;
+    }
+*********************************************************
+/*  IRMÃO ADJACENTE , SELECIONA O IRMÃO QUE É O PRÓXIMO DE OUTRO.
+Seleciona o primeiro elemento <p> depois de qualquer elemento <h1>
+(mas não outros elementos <p> */
+
+h1 + p {
+    color: red;
+}
+*********************************************************
+
+/*  SELETOR DE IRMÃO GERAL *** SELECIONA UM ELEMENTO QUE É  IRMÃO DE OUTRO, 
+EMBORA ELE NÃO PRECISE SER O ELEMENTO DIRETAMENTE PRECEDENTE .
+
+Se houvesse dois elementos <p> que fossem irmãos de um elemento <h1>
+essa regra se aplicaria aos dois. */
+
+h1~p {
+    color:pink;
+}

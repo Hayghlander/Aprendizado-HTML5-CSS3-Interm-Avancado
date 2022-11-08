@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<heady>
+
+        <title> fonte customizada </title>
+        <meta charset="utf-8">
+        <style type="text/css">
+             
+             @font-face {
+                font-family: "blackout";
+                src: url("BlackoutRegular.woff");
+        }
+
+                h1 {
+                     font-size:  6em;
+                     font-family: "blackout";   
+                }
+             
+        </style>
+</heady>
+
+<body>
+        <h1>fonte customizada</h1>
+       
+</body>
+
+</html>
